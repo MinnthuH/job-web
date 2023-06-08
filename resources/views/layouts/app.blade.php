@@ -80,6 +80,7 @@
     <!-- Template JS File -->
     <script src="{{ asset('dashboard/js/scripts.js') }}"></script>
     <script src="{{ asset('dashboard/js/custom.js') }}"></script>
+    <script src="{{ asset('dashboard/validate.min.js')}}"></script>
 
     @yield('scripts')
 

@@ -25,6 +25,10 @@ class CategoryController extends Controller
     // Store Category Method
     public function storeCategory(Request $request)
     {
+        $validate = $request->validate([
+            'name' => 'required|max:200',
+
+        ]);
         Category::insert([
             'name' => $request->name,
             'created_at' => Carbon::now()->setTimezone('Asia/Yangon'),
